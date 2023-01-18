@@ -1,0 +1,19 @@
+o = vim.o
+
+o.autoindent = true
+o.clipboard = "unnamedplus"
+o.compatible = false
+o.cursorline = true
+o.expandtab = true
+o.hlsearch = true
+o.incsearch = true
+o.mouse = "a"
+o.number = true
+o.shiftwidth = 4
+o.showmatch = true
+o.smarttab = true
+o.softtabstop = 4
+o.tabstop = 4
+o.termguicolors = true
+o.ttyfast = true
+o.wildmode = "longest,list"
