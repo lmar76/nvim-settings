@@ -1,18 +1,15 @@
 #!/bin/zsh
 set -e
 
-ITEMS=(.vimrc
-       .config/nvim/init.vim
-       .config/nvim/lua/plugins.lua)
-
 cd $(dirname $0)/..
 REPODIR=$(pwd)
 
-for item in ${ITEMS[*]}
+for directory in ".config" ".config/nvim" ".config/nvim/lua"
 do
-    src=$HOME/$item
-    dst=$REPODIR/$item
-    dst_parent=$(dirname $dst)
-    [ ! -d $dst_parent ] && mkdir -v $dst_parent
-    cp -v $src $dst
+    [ ! -d $directory ] && mkdir -v $directory
 done
+
+cp -v ~/.vimrc .
+cp -v ~/.config/nvim/init.lua .config/nvim
+cp -v ~/.config/nvim/lua/* .config/nvim/lua
+
