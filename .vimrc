@@ -1,19 +1,20 @@
-set autoindent              " indent a new line the same amount as the line just typed
-set clipboard=unnamedplus   " using system clipboard
-set cursorline              " highlight current cursorline
-set expandtab               " converts tabs to white space
+set nocompatible            " disable compatibility to old-time vi
+set showmatch               " show matching 
 set hlsearch                " highlight search 
 set incsearch               " incremental search
-set mouse=a                 " enable mouse click
-set nocompatible            " disable compatibility to old-time vi
-set shiftwidth=4            " width for autoindents
-set showmatch               " show matching 
-set smarttab
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
 set tabstop=4               " number of columns occupied by a tab 
-set termguicolors
-set ttyfast                 " Speed up scrolling in Vim
+set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
+set expandtab               " converts tabs to white space
+set shiftwidth=4            " width for autoindents
+set autoindent              " indent a new line the same amount as the line just typed
+set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
+set mouse=a                 " enable mouse click
+set clipboard=unnamedplus   " using system clipboard
+set cursorline              " highlight current cursorline
+set ttyfast                 " Speed up scrolling in Vim
+set smarttab
+set termguicolors
 
 filetype plugin indent on   " allow auto-indenting depending on file type
 
