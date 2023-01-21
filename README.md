@@ -1,2 +1,3 @@
-# vim-nvim
-My Vim and Neovim repository
+# nvim-settings
+
+My Neovim settings.
