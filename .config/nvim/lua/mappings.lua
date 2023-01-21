@@ -1,1 +1,1 @@
-vim.keymap.set("n", "<Leader>", "<cmd>Neotree toggle reveal<cr>")
+vim.cmd([[nnoremap \ :Neotree toggle reveal<cr>]])
