@@ -21,4 +21,16 @@ return require("packer").startup(function(use)
         end
     }
 
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate"
+    }
+
+    use {
+        "stevearc/aerial.nvim",
+        config = function()
+            require("aerial").setup()
+        end
+    }
+
 end)
