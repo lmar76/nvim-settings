@@ -1,4 +1,5 @@
 require("options")
 require("commands")
-require("plugins")
 require("mappings")
+require("plugins")
+require("plugins_config.tokyonight")
