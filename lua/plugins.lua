@@ -45,11 +45,16 @@ return require('packer').startup(function(use)
         end
     }
 
-    use "lukas-reineke/indent-blankline.nvim"
-
-    require("indent_blankline").setup{
-        show_current_context = true,
-        show_current_context_start = true,
+    use {
+        "lukas-reineke/indent-blankline.nvim",
+        config = function()
+            require("aerial").setup({
+                show_current_context = true,
+                show_current_context_start = true,
+                show_end_of_line = true,
+                space_char_blankline = " "
+            })
+        end
     }
 
     -- Automatically set up your configuration after cloning packer.nvim
