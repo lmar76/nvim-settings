@@ -209,8 +209,9 @@ require('lazy').setup({
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
--- Set highlight on search
+-- Search options
 vim.o.hlsearch = false
+vim.o.incsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
@@ -223,8 +224,14 @@ vim.o.mouse = 'a'
 --  See `:help 'clipboard'`
 vim.o.clipboard = 'unnamedplus'
 
--- Enable break indent
+-- Indentation. tabs and spaces
+vim.o.autoindent = true
+vim.o.smartindent = true
 vim.o.breakindent = true
+vim.o.shiftwidth = 4
+vim.o.smarttab = true
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
 
 -- Save undo history
 vim.o.undofile = true
